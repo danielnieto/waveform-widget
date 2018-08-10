@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+
+.waveform {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .1rem;
+
+    .title {
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 13px;
+    }
+
+}
