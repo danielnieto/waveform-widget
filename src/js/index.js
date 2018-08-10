@@ -29,7 +29,7 @@ var waveform2 = new Waveform({
         svg110:
             "https://uploads.codesandbox.io/uploads/user/a6f59428-f0d7-41bd-8f8d-53d125d25caf/1L7w-dc48d411-6f27-4e8b-8492-8de2f84f600f-waveform-110.svg"
     },
-    svgToUse: "svg90",
+    svgToUse: "svg90"
 });
 
 waveform2.render(document.querySelector("#app"));
@@ -53,12 +53,10 @@ var waveform3 = new Waveform({
 waveform3.render(document.querySelector("#app"));
 var percentage = 0;
 
-var interval = setInterval(function(){
-        
+var interval = setInterval(function() {
     waveform3.setProgress(++percentage);
 
-    if(percentage === 100){
+    if (percentage === 100) {
         clearInterval(interval);
     }
-
 }, 700);
